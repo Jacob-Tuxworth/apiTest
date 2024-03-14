@@ -36,6 +36,17 @@ function fetchDataFromAPI(url) {
         return error;
       });
   }
+
+  function fetchChuckData() {
+    const apiUrl = 'https://api.chucknorris.io/jokes/random';
+    return fetchDataFromAPI(apiUrl)
+      .then(data => {
+        return data;
+      })
+      .catch(error => {
+        return error;
+      });
+  }
   
   // Example usage:
   const apiUrl = 'https://pokeapi.co/api/v2/pokemon/ditto'; // Example API URL
