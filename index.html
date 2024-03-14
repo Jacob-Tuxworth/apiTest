@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quad API Interface</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- First Section -->
+        <div class="item">
+            <h1>POKEMON API</h1>
+            <form id="myPokemonForm">
+                <label for="textInput">Enter a Pokemon Name:</label>
+                <input type="text" id="textInput" name="name" required>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="pokemonOutputWidget">
+                <p id="pokemonOutput"></p>
+                <!-- Pokemon image gets outputted here -->    
+            </div>
+        </div>
+
+        <!-- Second Section -->
+        <div class="item">
+            <h1>CHUCK NORRIS API</h1>
+            <form id="myChuckForm">
+                <label>Click the button to hear a Chuck Norris Joke: </label>
+                <button type="submit">Generate Joke</button>
+            </form>
+
+            <div id="chuckOutputWidget">
+                <p id="chuckOutput"></p>
+            </div>
+        </div>
+        
+        <!-- Third Section -->
+        <div class="item">
+            <h1>JOKE API</h1>
+            <form id="myJokeForm">
+                <label>Click the button to see a random Joke: </label>
+                <button type="submit">Generate Joke</button>
+            </form>
+
+            <div id="jokeOutputWidget">
+                <p id="jokeOutput"></p>
+            </div>
+        </div>
+
+        <!-- Fourth Section-->
+        <div class="item">
+            <h1>DOG API</h1>
+            <form id="myDogForm">
+                <label>Click the button to see a random Dog image: </label>
+                <button type="submit">Generate Image</button>
+            </form>
+
+            <div id="dogOutputWidget">
+                <!-- Image is outputted here -->
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+    <!-- JAVASCRIPT SCRIPTS -->
+    <script src="fetch.js"></script>
+    <script src="pokemon-form.js"></script>
+</body>
+</html>
